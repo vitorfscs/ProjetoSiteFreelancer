@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#bg-maior{
+    width: 100%;
+    height: 180vh;
+    background-color: gainsboro;
+}
+
+#content-head{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    background-color: #BFB40C;
+    border-radius: 5px;
+}
+
+#content-head img{
+    margin-left: 60px;
+}
+
+#cabecalho{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+}
+
+
+#cabecalho img{
+    margin-left: -600px;
+    opacity: 80%;
+}
+
+#cabecalho ul{
+    display: inline;
+}
+
+#cabecalho ul li{
+    color: #BFB40C;
+}
+
+.finalcabeca{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+#galery{
+    opacity: 75%;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#galery:hover{
+    transform: scale(1.1);
+}
+
+.hagas{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -500px;
+    color: white;
+    font-size: 40px;
+}
+
+
+.hagas button{
+    width: 200px;
+    height: 50px;
+    background-color: #BFB40C;
+    border-radius: 15px;
+    opacity: 75%;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fixo na tela */
+    z-index: 1; /* Fica acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Habilita rolagem se necessário */
+    background-color: rgb(0,0,0); /* Fundo preto com opacidade */
+    background-color: rgba(0,0,0,0.4); /* Fundo preto com opacidade */
+}
+
+.modal-conteudo {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centraliza verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largura do modal */
+    border-radius: 10px;
+}
+
+.fechar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+#preta-info{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    height: 300px;
+    background-color: black;
+    margin-top: 80px;
+    border-radius: 5px;
+}
+
+#infos{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 995px;
+    height: 297px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#infos h2 {
+    margin-top: 40px;
+}
+
+#infos P{
+    font-size: 25px;
+}
+
+#infos button{
+    background-image: url("zap.webp");
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    border-radius: 40px;
+}
+
+#advogar{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#advogar ul{
+    margin-left: 60px;
+}
+
+#forms{
+    width: 100%;
+    height: 180px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#forms h2{
+    margin-left: -100px;
+}
+
+#forms button{
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #BFB40C;
+    margin-left: 150px;
+
+}
+
+#rodape{
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+#rodape h3{
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+#rodape p{
+    margin-left: 30px;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+
+
+  @media screen and (max-width: 1000px){
+
+    #cabecalho img{
+        margin-left: -410px;
+    }
+
+
+    #preta-info{
+        width: 750px;
+        height: 400px;
+        margin-top: 190px;
+    }
+    
+    #infos{
+        width: 745px;
+        height: 395px;
+    }
+    
+  }
+
+@media screen and (max-width: 500px){
+    #content-head{
+        display: flex;
+    }
+
+    #content-head p{
+        opacity: 0;
+    }
+
+    #content-head img{
+        margin-left: -330px;
+    }
+
+    #cabecalho img{
+        margin-left: -50px;
+    }
+
+    .hagas{
+        font-size: 27px;
+    }
+
+    #preta-info{
+        width: 380px;
+        height: 380px;
+        margin-top: 190px;
+    }
+    
+    #infos{
+        width: 375px;
+        height: 375px;
+    }
+    
+    #infos h2{
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    #infos p{
+        font-size: 18px;
+    }
+
+    #advogar ul{
+        margin-left: 20px;
+    }
+
+    #forms h2{
+        margin-left: 0px;
+    }
+    
+    #forms button{
+        width: 150px;
+        height: 35px;
+        border-radius: 10px;
+        background-color: #BFB40C;
+        margin-left: 0px;
+    
+    }
+  }
